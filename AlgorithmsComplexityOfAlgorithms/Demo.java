@@ -25,7 +25,7 @@ public class Demo {
     System.out.println("Counter: " + counter.get());
     
     counter = new AtomicInteger(0);
-    fib = fib2(13, counter);
+    fib = fib2(13h, counter);
     System.out.println("Fib number" + fib);
     System.out.println("Counter: " + counter.get());
   }
