@@ -1,7 +1,7 @@
 public void rotateLeft() {
-  if (head != null) {                       //otherwise it is empty list
+  if (head != null) {                       
     Node temp = head;
-    if (head.getNext() != null) {           //otherwise it is single item list
+    if (head.getNext() != null) {           
         head = head.getNext();
     }
 
@@ -24,7 +24,7 @@ public void rotateLeft() {
 }
 
 public void rotateRight() {
-  if (head != null) {                       //otherwise it is empty list
+  if (head != null) {                      
     Node tail = null;
     Node current = head;
 
@@ -32,7 +32,7 @@ public void rotateRight() {
         tail = current;
         current = current.getNext();
     }
-    if (tail != null) {             //otherwise it is single item list
+    if (tail != null) {             
         tail.setNext(null);
         current.setNext(head);
         head = current;
@@ -54,18 +54,18 @@ public class LinkedList {
 
   public void rotateLeft() {
       System.out.println("<-");
-      if (head != null) { // otherwise it is empty list
+      if (head != null) { 
           Node temp = head;
-          if (head.getNext() != null) { // otherwise it is single item list
+          if (head.getNext() != null) { 
               head = head.getNext();
           }
 
           Node tail;
           if (head.getNext() != null) {
-              // more than 2 items in the list
+             
               tail = head.getNext();
           } else {
-              // only 2 items in the list
+             
               tail = head;
           }
           while (tail.getNext() != null) {
@@ -80,7 +80,7 @@ public class LinkedList {
 
   public void rotateRight() {
       System.out.println("->");
-      if (head != null) { // otherwise it is empty list
+      if (head != null) { 
           Node tail = null;
           Node current = head;
 
@@ -88,7 +88,7 @@ public class LinkedList {
               tail = current;
               current = current.getNext();
           }
-          if (tail != null) { // otherwise it is single item list
+          if (tail != null) { 
               tail.setNext(null);
               current.setNext(head);
               head = current;
